@@ -1,0 +1,167 @@
+<html>
+
+<head>
+<title>Swati Music School</title>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/home.js"></script>
+
+</head>
+
+<body onload="slides()" style="background-color: #f4f3ee; margin: 0px;">
+<div class="header">
+
+<ul>
+
+<div class="close" onclick="closemenu()">
+<i class="fa fa-close"></i>
+</div>
+
+<li>
+<a href="home.php" class="linker">HOME</a>
+</li>
+
+<li>
+<a href="aboutus.php" class="linker">ABOUT US</a>
+</li>
+
+<li>
+<a href="#" class="linker">PROGRAMMES</a>
+</li>
+
+<li>
+<a href="#" class="linker">BLOG</a>
+</li>
+
+<li>
+<a href="contactus.php" class="linker">CONTACT US</a>
+</li>
+
+<div class="menu" onclick="showmenu()">
+
+<div></div>
+<div></div>
+<div></div>
+
+</div>
+
+</ul>
+</div>
+
+<div class="logo" style="width: 100%; background: linear-gradient(#cc9966,#4d3319); overflow: hidden;">
+<img src="imgs/musiclogo.png" style="height: 5vw; margin: auto; float: left;">
+<p style="width: 80%; float: left; bottom: 0px; color: white; font-size: 1.5vw;">SWATI MUSIC SCHOOL</p>
+</div>
+
+<div class="slideshow" style="width: 100%; height: auto;">
+
+<div style="width: 100%; height: auto;">
+<img src="imgs/guitar_learning.jpg" id="a1" style="width: 100%;" />
+</div>
+<div class="centered" id="p1">MUSIC FOR EVERYONE</div>
+<img src="imgs/piano_learning.jpg" id="a2" style="width: 100%;" />
+<div class="centered" id="p2">MUSIC IS YOUR WORLD</div>
+<img src="imgs/violin_learning.jpg" id="a3" style="width: 100%;" />
+<div class="centered" id="p3">LET's START YOUR MUSIC CAREER</div>
+<div class="text-block">
+    <h4>START LEARNING</h4>
+</div>
+</div>
+
+<div style="width: 100%; text-align: center; font-size: 1vw;">
+<h1>WELCOME TO OUR MUSIC SCHOOL</h1>
+</div>
+
+<div class="welcome" style="width: 100%; display: inline-block;">
+<div class="video" style="width: 50%; margin: auto;"><iframe src="https://www.youtube.com/embed/isQPPqr7SmM" style="width: 100%; height: 100%;" frameborder="0" 
+allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div class="musicschool" style="width: 50%;">
+</div>
+
+<div style="width: 100%; text-align: center; font-size: 2vw;">
+<h1>CHOOSE YOUR CLASS</h1>
+</div>
+
+<div class="instruments" style="height: auto;">
+<div>
+<a href="#">
+<img src="imgs/vocals.png" style="width: 100%;" />
+<p>VOCALS</p>
+</a>
+</div>
+
+<div>
+<a href="#">
+<img src="imgs/tabla.png" style="width: 100%;" />
+<p>TABLA</p>
+</a>
+</div>
+
+<div>
+<a href="#">
+<img src="imgs/harmonium.jpg" style="width: 100%;" />
+<p>HARMONIUM</p>
+</a>
+</div>
+
+</div>
+
+<div style="width: 100%; text-align: center; font-size: 2vw; color: black; font-family: Rufina;" class="image">
+<img src="imgs/music.jpg" style="width: 100%; opacity: 0.4; font-family: Rufina;">
+<h4 style="color: black; font-family: Rufina;">SWATI MUSIC SCHOOL</h4>
+<p style="color: black; font-family: Rufina;">At our School, we share our passion for music with students from all walks of life. 
+Whether young or old, beginner or master, our students grow!At Swati Music School, we make music education accessible 
+for students from all over the world. Our doors are open to the students of all ages and any levels of experience. 
+Our mission is to develop individuals, inspire creative passion, and increase student's self-confidence.</p>
+
+</div>
+
+<div class="footer">
+
+<div class="elements">
+
+<div class="element">
+<img src="imgs/musiclogo.png" style="height: 3vw; margin: auto; float: left;">
+<p style="float: left; top: 10px; color: white; font-size: 1vw;">SWATI MUSIC SCHOOL</p>
+<br /><br /><br />
+<p style="clear: left;">Location:<br />
+19 Parramatta Walk Craigieburn,<br />
+Victoria - 3064<br />
+Australia
+</p>
+</div>
+
+<div class="element">
+<h4>QUICK LINKS</h4>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">ABOUT US</a></li>
+<li><a href="#">PROGRAMMES</a></li>
+<li><a href="#">BLOG</a></li>
+<li><a href="#">CONTACT</a></li>
+</ul>
+</div>
+
+<div class="element">
+<h4>POPULAR CLASSES</h4>
+<ul>
+<li><a href="#">VOCAL</a></li>
+<li><a href="#">TABLA</a></li>
+<li><a href="#">HARMONIUM</a></li>
+<br /><br />
+</ul>
+</div>
+
+<div class="icons">
+<p>FOLLOW US ON</p>
+<i class="fa  fa-facebook"></i>
+<i class="fa  fa-twitter"></i>
+<i class="fa  fa-instagram"></i>
+<i class="fa  fa-linkedin"></i>
+</div>
+</div>
+</div>
+</body>
+
+</html>

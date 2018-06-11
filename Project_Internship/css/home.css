@@ -1,0 +1,196 @@
+.header ul{
+ background: linear-gradient(#444444,#888888);
+ width: 100%;
+ overflow: hidden;
+ margin: 0px 0px;
+ padding: 0px 0px;
+ font-size: 1vw;
+}
+.header li{
+	list-style-type: none;
+}
+
+.header li a{
+	float: left;
+	padding: 10px 0px;
+	width: 20%;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+.header li a:hover{
+	background-color: black;
+	color: white;
+}
+
+.menu div{
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 5px 0px;
+}
+
+.menu{
+	display: none;
+}
+
+.close {
+	display: none;
+	color: white;
+	font-size: 4vw;
+}
+
+.slideshow img{
+	display: none;
+}
+
+.instruments{
+	width: 80%;
+	margin: auto;
+}
+
+.instruments div{
+	margin: 0px 40px;
+}
+
+.instruments img:hover{
+  opacity: 0.4;
+}
+
+.instruments a{
+	text-decoration: none;
+	color: black;
+	font-size: 2vw;
+	text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-family: Lora;
+	font-size: 4vw;
+	color: white;
+	display: none;
+	text-align: center;
+}
+
+.text-block {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3vw;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image{
+	position: relative;
+	width: 100%;
+}
+
+.image h4{
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	color: white;
+	font-size: 3vw;
+}
+
+.image p{
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	color: white;
+	font-size: 3vw;
+}
+
+.footer{
+	width: 100%;
+	background-color: black;
+}
+
+.instruments div{
+	width: 25%; 
+	display: inline-block;
+}
+
+.elements{
+	width: 80%;
+    margin: auto;
+    color: white;
+    position: relative;	
+}
+
+.element{
+	width: 25%;
+	display: inline-block;
+}
+
+.element li{
+	list-style-type: none;
+}
+
+.element li a{
+	text-decoration: none;
+	color: white;
+}
+
+.icons{
+	width: 10%;
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	color: white;
+}
+
+.icons i{
+	margin: 0px 5px;
+}
+
+@media screen and (max-width: 1200px) {
+
+.menu{
+	display: block;
+	float: right;
+}	
+	.header ul li a{
+		width: 100%;
+		display: none;
+	}
+	
+	.instruments{
+	    width: 100%;}
+	
+	.instruments div{
+	    width: 25%;
+		display: block;
+	    margin: auto;
+	}
+	
+	.elements{
+		width: 100%;
+	}
+	
+	.element{
+		width: 100%;
+		display: block; 
+		overflow: hidden;
+	}
+	
+	.element ul li a{
+		width: 100%;
+		display: block; 
+		overflow: hidden;
+	}
+	
+	.icons{
+		width: 50%;
+		margin: auto;
+	}
+	
+}
