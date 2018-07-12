@@ -53,83 +53,14 @@
 	font-size: 4vw;
 }
 
-.slideshow img{
-	display: none;
-}
-
-.instruments{
-	width: 80%;
-	margin: auto;
-}
-
-.instruments div{
-	margin: 0px 40px;
-}
-
-.instruments img:hover{
-  opacity: 0.4;
-}
-
-.instruments a{
-	text-decoration: none;
-	color: black;
-	font-size: 2vw;
-	text-align: center;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	color: white;
-	font-family: Lora;
-	font-size: 4vw;
-	color: white;
-	display: none;
-	text-align: center;
-}
-
-.text-block {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 3vw;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.image{
-	position: relative;
-	width: 100%;
-}
-
-.image h4{
-	position: absolute;
-	width: 100%;
-	top: 50px;
-	color: white;
-	font-size: 3vw;
-}
-
-.image p{
-	position: absolute;
-	width: 100%;
-	top: 30%;
-	color: white;
-	font-size: 3vw;
+.logo{
+	z-index: 2;
 }
 
 .footer{
 	width: 100%;
 	background-color: black;
-}
-
-.instruments div{
-	width: 25%; 
-	display: inline-block;
+	margin-top: 20px;
 }
 
 .elements{
@@ -165,30 +96,16 @@
 	margin: 0px 5px;
 }
 
-.quickfacts{
-	width: 100%;
-}
-
-.facts{
-	width: 80%;
+table{
+	width: 90%;
 	margin: auto;
 }
 
-.fact{
-	width: 20%;
-	border-radius: 100%;
-	border: 2px solid black;
-	background-color: white;
-	opacity: 0.4;
+table tr td{
+	padding: 5%;
 	font-size: 2vw;
-	text-align: center;
-	display: inline-block;
-	margin: 2% 20px; 
-}
-
-.logo{
-	z-index: 2;
-}
+	width: 40%; 
+}	
 
 @media screen and (max-width: 1200px) {
 
@@ -196,22 +113,24 @@
 	display: block;
 	float: right;
 }	
-	.header ul li{
+.header ul li{
 		width: 100%;
 		display: none;
 		position: relative;
 		z-index: 4;
 	}
 	
-	.instruments{
-	    width: 100%;}
-	
-	.instruments div{
-	    width: 25%;
-		display: block;
-	    margin: auto;
+.header ul{
+	    position: relative;
+		z-index: 2;
+	    font-size: 4vw;	
 	}
 	
+.logo{
+		position: relative;
+		z-index: 2;
+	}
+
 	.elements{
 		width: 100%;
 	}
@@ -231,27 +150,6 @@
 	.icons{
 		width: 50%;
 		margin: auto;
-	}
-	
-	.facts{
-		width: 100%;
-	}
-	.fact{
-		width: 25%;
-		margin: auto;
-		display: block;
-		margin: 2% auto;
-	}
-	
-	.header ul{
-	    position: relative;
-		z-index: 2;
-	    font-size: 4vw;	
-	}
-	
-	.logo{
-		position: relative;
-		z-index: 2;
-	}
+	}	
 	
 }

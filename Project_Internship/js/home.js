@@ -1,8 +1,9 @@
 function showmenu(){
-    for(i=0;i<5;i++){
+    for(var i=0;i<5;i++){
      var x=document.getElementsByClassName("header")[0];
 	 var y=  x.getElementsByTagName("li")[i];
-	 y.getElementsByTagName("a")[0].style.display="block";
+	 y.style.display="block";
+	 y.getElementsByTagName("a")[0].style.display="block";	 
 	}
 document.getElementsByClassName("menu")[0].style.display = "none";
 document.getElementsByClassName("close")[0].style.display = "block";
@@ -26,6 +27,7 @@ function closemenu(){
    for(i=0;i<5;i++){
      var x=document.getElementsByClassName("header")[0];
 	 var y=  x.getElementsByTagName("li")[i];
+	 y.style.display="none";
 	 y.getElementsByTagName("a")[0].style.display="none";
 	}
 document.getElementsByClassName("menu")[0].style.display = "block";
@@ -34,6 +36,7 @@ setInterval(function(){if(document.body.clientWidth>1200){
  for(i=0;i<5;i++){
      var x=document.getElementsByClassName("header")[0];
 	 var y=  x.getElementsByTagName("li")[i];
+	 y.style.display="block";
 	 y.getElementsByTagName("a")[0].style.display="block";
 	}
 }},100);

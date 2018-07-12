@@ -1,41 +1,22 @@
+<!doctype html>
 <html>
 
 <head>
 <title>Swati Music School</title>
-<link rel="stylesheet" type="text/css" href="css/aboutus.css">
+<link rel="stylesheet" href="css/ourclasses.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="js/aboutus.js"></script>
+<script src="js/ourclasses.js"></script>
+
 </head>
 
-<body onload="slides()" style="background-color: #f4f3ee; margin: 0px;">
-
+<body onload="slides()" style="margin: 0px;">
 <div class="header">
 
-<ul>
-
-<div class="close" onclick="closemenu()">
-<i class="fa fa-close"></i>
-</div>
-
-<li>
-<a href="home.php" class="linker">HOME</a>
-</li>
-
-<li>
-<a href="aboutus.php" class="linker">ABOUT US</a>
-</li>
-
-<li>
-<a href="#" class="linker">PROGRAMMES</a>
-</li>
-
-<li>
-<a href="#" class="linker">BLOG</a>
-</li>
-
-<li>
-<a href="contactus.php" class="linker">CONTACT US</a>
-</li>
+<div class="logo" style="width: 100%; overflow: hidden;">
+<a href="home.html" style="float: left;">
+<img src="imgs/musiclogo.png" style="height: 5vw; margin: auto; float: left;">
+</a>
+<p style="width: 20%; float: left; bottom: 0px; color: white; font-size: 1.5vw;">SWATI MUSIC SCHOOL</p>
 
 <div class="menu" onclick="showmenu()">
 
@@ -45,12 +26,36 @@
 
 </div>
 
-</ul>
+<ul>
+
+<div class="close" onclick="closemenu()">
+<i class="fa fa-close"></i>
 </div>
 
-<div class="logo" style="width: 100%; background: linear-gradient(#cc9966,#4d3319); overflow: hidden;">
-<img src="imgs/musiclogo.png" style="height: 5vw; margin: auto; float: left;">
-<p style="width: 80%; float: left; bottom: 0px; color: white; font-size: 1.5vw;">SWATI MUSIC SCHOOL</p>
+<li>
+<a href="contactus.html" class="linker">CONTACT US</a>
+</li>
+
+<li>
+<a href="latest_creations.html" class="linker">LATEST CREATIONS</a>
+</li>
+
+<li>
+<a href="book_a_class.html" class="linker">BOOK A CLASS</a>
+</li>
+
+<li>
+<a href="ourclasses.html" class="linker">OUR CLASSES</a>
+</li>
+
+<li>
+<a href="home.html" class="linker">HOME PAGE</a>
+</li>
+
+</ul>
+
+</div>
+
 </div>
 
 <div style="width: 100%; text-align: center; font-size: 1vw;">
@@ -123,7 +128,84 @@ You Bring the Passion. Together, We’ll Build Your Future.
 
 </div>
 
-<div class="footer">
+<hr />
+
+<div style="width: 100%; text-align: center; font-size: 2vw;">
+<h1>OUR CLASSES</h1>
+</div>
+
+<div class="classes">
+
+<table>
+
+<tr>
+
+<td>
+VOCALS
+</td>
+
+<td>
+8 OCTOBER
+</td>
+
+<td>
+Every day: 12:00 - 14:30<br />
+Sunday: 17:00 - 19:30
+</td>
+
+<td>
+<a style="text-decoration: none; background-color: blue; padding: 5px; color: white; font-size: 2vw;" href="vocalclasses.html">READMORE</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+TABLA
+</td>
+
+<td>
+9 AUGUST
+</td>
+
+<td>
+Every day: 12:00 - 14:30<br />
+Sunday: 17:00 - 19:30
+</td>
+
+<td>
+<a style="text-decoration: none; background-color: blue; padding: 5px; color: white; font-size: 2vw;" href="tablaclasses.html">READMORE</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+HARMONIUM
+</td>
+
+<td>
+12 SEPTEMBER
+</td>
+
+<td>
+Every day: 12:00 - 14:30<br />
+Sunday: 17:00 - 19:30
+</td>
+
+<td>
+<a style="text-decoration: none; background-color: blue; padding: 5px; color: white; font-size: 2vw;" href="harmoniumclasses.html">READMORE</a>
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="footer" style="clear: left;">
 
 <div class="elements">
 
@@ -141,20 +223,20 @@ Australia
 <div class="element">
 <h4>QUICK LINKS</h4>
 <ul>
-<li><a href="#">HOME</a></li>
-<li><a href="#">ABOUT US</a></li>
-<li><a href="#">PROGRAMMES</a></li>
-<li><a href="#">BLOG</a></li>
-<li><a href="#">CONTACT</a></li>
+<li><a href="home.html">HOME</a></li>
+<li><a href="ourclasses.html">OUR CLASSES</a></li>
+<li><a href="book_a_class.html">BOOK A CLASS</a></li>
+<li><a href="latest_creations.html">LATEST CREATIONS</a></li>
+<li><a href="contactus.html">CONTACT</a></li>
 </ul>
 </div>
 
 <div class="element">
 <h4>POPULAR CLASSES</h4>
 <ul>
-<li><a href="#">VOCAL</a></li>
-<li><a href="#">TABLA</a></li>
-<li><a href="#">HARMONIUM</a></li>
+<li><a href="vocalclasses.html">VOCAL</a></li>
+<li><a href="tablaclasses.html">TABLA</a></li>
+<li><a href="harmoniumclasses.html">HARMONIUM</a></li>
 <br /><br />
 </ul>
 </div>
@@ -169,4 +251,9 @@ Australia
 </div>
 </div>
 </body>
+
+</html>
+
+</body>
+
 </html>

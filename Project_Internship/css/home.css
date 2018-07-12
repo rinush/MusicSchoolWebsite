@@ -1,24 +1,34 @@
-.header ul{
- background: linear-gradient(#444444,#888888);
- width: 100%;
- overflow: hidden;
- margin: 0px 0px;
- padding: 0px 0px;
- font-size: 1vw;
-}
-.header li{
-	list-style-type: none;
+.header{
+	background: linear-gradient(#cc9966,#4d3319);
 }
 
-.header li a{
-	float: left;
-	padding: 10px 0px;
-	width: 20%;
-	text-decoration: none;
-	color: white;
+.header ul{	
+ width: 70%;
+ position: relative;
+ margin: 0px 0px;
+ padding: 20px 0px;
+ font-size: 1vw;
+ z-index: 4;
+ float: left;
+}
+
+.header ul li{
+	list-style-type: none;
+	display: inline-block;
+	width: 14%;
+	margin-right: 0px;
+	float: right;
+	overflow: hidden;
+	padding: 20px 0px;
 	text-align: center;
 }
-.header li a:hover{
+
+.header ul li a{
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+.header li:hover{
 	background-color: black;
 	color: white;
 }
@@ -30,13 +40,16 @@
 	margin: 5px 0px;
 }
 
-.menu{
+.header .menu{
 	display: none;
+	float: right;
+	z-index: 8;
+	right: 0px;
 }
 
-.close {
+.header .close {
 	display: none;
-	color: white;
+	color: black;
 	font-size: 4vw;
 }
 
@@ -47,21 +60,28 @@
 .instruments{
 	width: 80%;
 	margin: auto;
+	overflow: hidden;
+	font-size: 2vw;
 }
 
-.instruments div{
+.instruments .inst{
 	margin: 0px 40px;
 }
 
-.instruments img:hover{
+.instruments .inst a img:hover{
   opacity: 0.4;
 }
 
-.instruments a{
+.instruments .inst a{
 	text-decoration: none;
 	color: black;
 	font-size: 2vw;
 	text-align: center;
+	display: block;
+}
+
+.instruments .inst{
+	float: left;
 }
 
 .centered {
@@ -90,23 +110,47 @@
 
 .image{
 	position: relative;
+	clear: left;
 	width: 100%;
+	text-align: center; 
+	font-size: 0.1vw; 
+	color: black; 
+	font-family: Rufina;
+	display: inline-block;
 }
 
 .image h4{
 	position: absolute;
-	width: 100%;
-	top: 50px;
-	color: white;
+	width: 50%;
+	top: 2%;
+	color: black;
 	font-size: 3vw;
 }
 
-.image p{
+.image img{
+	width: 50%;
+	float: left;
+}
+
+.image .img_subclass{
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	top: 30%;
-	color: white;
-	font-size: 3vw;
+	color: black;
+	font-size: 2vw;
+	margin: 5px;
+}
+
+.image .img_subclass2{
+	width: 50%;
+	float: left;
+}
+
+.image .img_subclass2 .video iframe{
+	min-height: 390px;
+	max-height: 390px;
+	width: 100%;
+	height: 100%;
 }
 
 .footer{
@@ -114,7 +158,7 @@
 	background-color: black;
 }
 
-.instruments div{
+.instruments .inst{
 	width: 25%; 
 	display: inline-block;
 }
@@ -152,24 +196,61 @@
 	margin: 0px 5px;
 }
 
+.logo{
+	z-index: 2;
+}
+
+.upcoming_events{
+	width: 100%;
+	display: inline-block;
+	margin: auto;
+	position: relative
+}
+
+.music_event{
+	width: 30%;
+	float: left;
+	display: inline-block;
+	margin: 10px;
+	position: relative;
+	opacity: 0.9;
+}
+
+.music_info{
+	text-align: center;
+	font-size: 2vw;
+	color: white;
+	position: absolute;
+	float: left;
+	z-index: 4;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 @media screen and (max-width: 1200px) {
 
-.menu{
+.header .menu{
 	display: block;
 	float: right;
 }	
-	.header ul li a{
+	.header ul li{
 		width: 100%;
 		display: none;
+		position: relative;
+		z-index: 4;
 	}
 	
 	.instruments{
 	    width: 100%;}
 	
-	.instruments div{
+	.instruments .inst{
+		clear: left;
 	    width: 25%;
 		display: block;
-	    margin: auto;
+	    margin-left: 40%;
+		padding: 10px 0px;
+		overflow: hidden;
 	}
 	
 	.elements{
@@ -192,5 +273,86 @@
 		width: 50%;
 		margin: auto;
 	}
+	
+	.video{
+		height: 30%;
+	}
+	
+	.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-family: Lora;
+	font-size: 4vw;
+	color: white;
+	text-align: center;
+	z-index: -1;
+}
+
+.text-block {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 3vw;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+	z-index: -1;
+}
+	
+	.header ul{
+		position: relative;
+		z-index: 2;
+	    font-size: 4vw;	
+	}
+	
+	.logo{
+		position: relative;
+		z-index: 2;
+	}
+	
+	.music_event{
+	width: 100%;
+	float: left;
+	display: block;
+	margin: 0px;
+}
+	
+	.music_info{
+		font-size: 8vw;
+	}
+	
+	.image img{
+	width: 100%;
+	clear: left;
+}
+
+body{
+	margin: 0px;
+}
+
+.image .img_subclass2{
+	width: 100%;
+	clear: left;
+}
+
+.image h4{
+	width: 100%;
+	font-size: 3vw;
+}
+
+.image .img_subclass{
+	width: 100%;
+	top: 15%;
+	font-size: 3vw;
+}
+
+.image .img_subclass2 .video iframe{
+	min-height: 200px;
+	max-height: 200px;
+}
 	
 }
